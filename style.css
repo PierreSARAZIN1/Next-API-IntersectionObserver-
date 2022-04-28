@@ -1,0 +1,134 @@
+/*  */
+
+:root {
+    --darkness: #16122e;
+    --blueSky: #2786dc;
+    --purple: #ae33f2;
+    --blueNight: #2c3176;
+    --purpleNight: #4f1878;
+    --greyNight: #152d53;
+    --purpleDark: #351757;
+    --blueElec: #226c93;
+    --blueElecNight: #11445c;
+    --darknessRGB: rgb(22, 18, 46);
+    --blueSkyRGB: rgb(39, 134, 220);
+    --purpleRGB: rgb(174, 51, 242);
+    --blueNightRGB: rgb(44, 49, 118);
+    --purpleNightRGB: rgb(79, 24, 120);
+    --greyNightRGB: rgb(21, 45, 83);
+    --purpleDarkRGB: rgb(53, 23, 87);
+    --blueElecRGB: rgb(34, 108, 147);
+    --blueElecNightRGB: rgb(17, 68, 92);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--darkness);
+}
+
+.pagetitle {
+    color: var(--purple);
+    text-align: center;
+    height: 100px;
+}
+
+.titlepagetitle {
+    margin-top: 10%;
+}
+
+.searchContainer {
+    height: 100px;
+    text-align: center;
+}
+
+.searchbar {
+    border: none;
+    height: 33px;
+    width: 130px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.searchBtn {
+    background-color: var(--purple);
+    border: none;
+    color: white;
+    border-radius: 20px;
+    height: 33px;
+    width: 80px;
+    font-size: 15px;
+}
+
+.Movie-Finded {
+    color: var(--purple);
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+/* .cardContainer {
+    padding-top: 10px;
+} */
+
+.divcard {
+    padding-top: 10px;
+    /* padding-bottom: 10px;
+    margin-bottom: 10px; */
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.divcard.not-visible {
+    transform: translateX(50px);
+    opacity: 0;
+    /* transition: transform 0.4s, opacity0.4s; */
+}
+
+.lvl2 {
+    height: 140px;
+    color: #d0d5dd;
+    background: rgba( 53, 23, 87, 0.45);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 10.5px);
+    -webkit-backdrop-filter: blur( 10.5px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.lvl2:hover {
+    background: rgba( 79, 24, 120, 0.45);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 10.5px);
+    -webkit-backdrop-filter: blur( 10.5px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.summerBody {
+    display: flex;
+}
+
+.moviePoster {
+    height: 110px;
+    width: 80px;
+}
+
+.titleMovie {
+    font-size: 13px;
+    margin-top: 5%;
+    margin-left: 10px;
+}
+
+#endPage {
+    margin-top: 60px;
+    height: 20px;
+    width: 20px;
+    border: solid;
+    border-color: white;
+}
+
+.end-invisible {
+    display: none;
+}
