@@ -10,13 +10,14 @@ const intObs = (value) => {
     let observer = new IntersectionObserver(observables => {
         observables.forEach(observable => {
 
-            if (observable.intersectionRatio > 0.9) {
+            if (observable.intersectionRatio > 0.5) {
                 observable.target.classList.remove('not-visible');
                 observable.target.classList.remove('not-visible');
 
                 //console.log(observable.target.classList)
             };
-            if (observable.target.classList.value === 'salut') {
+            if (observable.target.classList.value === 'salut' && a === 1) {
+                a = 0;
                 console.log(p);
                 console.log(pageMax);
                 observable.target.remove();
@@ -29,7 +30,7 @@ const intObs = (value) => {
 
         });
     }, {
-        threshold: [0.9]
+        threshold: [0.5]
     });
 
     let items = document.querySelectorAll(".col-sm-4");
@@ -54,13 +55,14 @@ const intObs2 = (p) => {
     let observer = new IntersectionObserver(observables => {
         observables.forEach(observable => {
 
-            if (observable.intersectionRatio > 0.9) {
+            if (observable.intersectionRatio > 0.5) {
                 observable.target.classList.remove('not-visible');
                 observable.target.classList.remove('not-visible');
 
                 //console.log(observable.target.classList)
             };
-            if (observable.target.classList.value === 'salut') {
+            if (observable.target.classList.value === 'salut' && a === 1) {
+                a = 0;
                 console.log(p);
                 console.log(pageMax);
                 observable.target.remove();
@@ -73,7 +75,7 @@ const intObs2 = (p) => {
 
         });
     }, {
-        threshold: [0.9]
+        threshold: [0.5]
     });
 
     let items = document.querySelectorAll(".col-sm-4");
