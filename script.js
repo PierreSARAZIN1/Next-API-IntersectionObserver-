@@ -16,7 +16,6 @@ const movieInit = () => {
 
 
     fetch(`https://www.omdbapi.com/?s=${input.value}&apikey=${APIKey}`)
-        //fetch(`http://www.omdbapi.com/?s=${input.value}&apikey=${APIKey}&page=1`)
         .then(function(res) {
             if (res.ok) {
                 return res.json();
