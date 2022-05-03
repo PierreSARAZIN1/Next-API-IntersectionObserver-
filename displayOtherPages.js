@@ -9,7 +9,7 @@
 
 
 const newPage = (page, p) => {
-    fetch(`http://www.omdbapi.com/?s=${input.value}&apikey=${APIKey}&page=${page}`)
+    fetch(`https://www.omdbapi.com/?s=${input.value}&apikey=${APIKey}&page=${page}`)
         .then(function(res) {
             if (res.ok) {
                 return res.json();
